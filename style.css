@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(clearfix.css);
+
+/***** init *****/
+body {
+  background-color: black;
+  color: white;
+}
+
+#wrapper {
+  height: 100vh;
+  text-align: center;
+}
+
+/***** #top *****/
+#top {
+  height: 25%;
+}
+
+#top ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#top ul li {
+}
+
+#start {}
+
+#stop {}
+
+#result {
+  font-size: 20vmin;
+}
+
+/***** #middle *****/
+#middle {
+  height: 50%;
+}
+
+#youtube {
+  height: 100%;
+  position: relative;
+  padding: 0 25%;
+  width: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#youtube iframe {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/***** #bottom *****/
+#bottom {
+  height: 25%;
+}
+
+#bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+#bottom ul li {
+}
+
+#radio1Button {}
+
+#radio2Button {}
