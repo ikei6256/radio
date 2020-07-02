@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ラジオ体操</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css">
+  <!-- <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -20,13 +22,16 @@
     </div>
     <div id="middle">
       <div id="youtube">
-        <iframe id="radio1" width="640" height="360" src="https://www.youtube.com/embed/8LXVA1-qj1E?start=8" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="radio1" width="640" height="360" src="https://www.youtube.com/embed/8LXVA1-qj1E?start=8"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
         <!-- <iframe id="radio1" width="560" height="315" src="https://www.youtube.com/embed/feSVtC1BSeQ" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <!-- <iframe id="radio2" width="560" height="315" src="https://www.youtube.com/embed/dzQIMo-Xvyg" frameborder="0"
+        <!-- <iframe id="radio2" width="560" height="315" src="https://www.youtube.com/embed/dzQIMo-Xvyg" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <iframe id="radio2" width="560" height="315" src="https://www.youtube.com/embed/wGx8ykDtj_8?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="radio2" width="560" height="315" src="https://www.youtube.com/embed/wGx8ykDtj_8?start=8"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
     </div>
     <div id="bottom">
@@ -63,10 +68,10 @@
       }
     }
 
-    document.getElementById('radioL').onclick = function(){
+    document.getElementById('radioL').onclick = function () {
       showRadio(1);
     };
-    document.getElementById('radioR').onclick = function(){
+    document.getElementById('radioR').onclick = function () {
       showRadio(2);
     };
 
