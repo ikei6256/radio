@@ -4,13 +4,37 @@
 
 /***** init *****/
 body {
-  background-color: black;
+  background: linear-gradient(red, 2%, black, 98%,red);
   color: white;
 }
 
 #wrapper {
   height: 100vh;
   text-align: center;
+}
+
+.btn-real {
+  display: inline-block;
+  text-decoration: none;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  border-bottom: solid 2px #b5b5b5;
+}
+
+.btn-real i {
+  line-height: 80px;
+}
+
+.btn-real:active {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: none;
 }
 
 /***** #top *****/
@@ -29,12 +53,20 @@ body {
 #top ul li {
 }
 
-#start {}
+#start {
+  color: rgba(105, 130, 27, 0.43);
+  background-color: #203744;
+  margin-right: 50px;
+}
 
-#stop {}
+#stop {
+  color: #0a0a0a;
+  background-color: #b7282e;
+}
 
 #result {
   font-size: 20vmin;
+  margin-left: 100px;
 }
 
 /***** #middle *****/
@@ -79,6 +111,12 @@ body {
 #bottom ul li {
 }
 
-#radio1Button {}
+#radioL,
+#radioR {
+  color: rgba(152, 152, 152, 0.43);
+  background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+}
 
-#radio2Button {}
+#radioL {
+  margin-right: 20px;
+}

@@ -6,23 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ラジオ体操</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css">
 </head>
 
 <body>
   <div id="wrapper">
     <div id="top">
       <ul>
-        <li id="start">スタート</li>
-        <li id="stop">ストップ</li>
+        <li id="start" class="btn-real"><i class="fa fa-play"></i></li> <!-- スタート -->
+        <li id="stop" class="btn-real"><i class="fa fa-skull"></i></li> <!-- ストップ -->
         <li id="result">?</li>
       </ul>
     </div>
     <div id="middle">
       <div id="youtube">
-        <iframe id="radio1" width="640" height="360" src="https://www.youtube.com/embed/8LXVA1-qj1E" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- <iframe id="radio1" width="560" height="315" src="https://www.youtube.com/embed/feSVtC1BSeQ" frameborder="0"
+        <!-- <iframe id="radio1" width="640" height="360" src="https://www.youtube.com/embed/8LXVA1-qj1E" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <iframe id="radio1" width="560" height="315" src="https://www.youtube.com/embed/feSVtC1BSeQ" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- <iframe id="radio2" width="560" height="315" src="https://www.youtube.com/embed/wGx8ykDtj_8?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <iframe id="radio2" width="560" height="315" src="https://www.youtube.com/embed/dzQIMo-Xvyg" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -30,8 +31,8 @@
     </div>
     <div id="bottom">
       <ul>
-        <li id="radio1Button">1</li>
-        <li id="radio2Button">2</li>
+        <li id="radioL" class="btn-real"><i class="fas fa-angle-left"></i></li>
+        <li id="radioR" class="btn-real"><i class="fas fa-angle-right"></i></li>
       </ul>
     </div>
   </div>
@@ -62,10 +63,10 @@
       }
     }
 
-    document.getElementById('radio1Button').onclick = function(){
+    document.getElementById('radioL').onclick = function(){
       showRadio(1);
     };
-    document.getElementById('radio2Button').onclick = function(){
+    document.getElementById('radioR').onclick = function(){
       showRadio(2);
     };
 
