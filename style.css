@@ -4,7 +4,7 @@
 
 /***** init *****/
 body {
-  background: linear-gradient(crimson, 1%, black);
+  background: linear-gradient(crimson, 1%, black, 99%,  crimson);
   color: white;
 }
 
